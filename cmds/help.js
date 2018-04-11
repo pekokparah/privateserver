@@ -6,7 +6,7 @@ exports.run = async (bot, message, args) => {
 .setTitle(':palm_tree: Hello, i am patrick :palm_tree:')
 .setDescription('I`m the bot of the bikini bottom')
 .addField('Anime:','`neko`', true)
-.addField('Core:','`help`ping` `invite`', true)
+.addField('Core:','`help` `ping` `invite`', true)
 .addField('Moderation:','`clear` `welcome`', true)
 .addField('Utility:','`avatar`', true)
 .addField('Fun:','`say`', true)
