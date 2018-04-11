@@ -45,10 +45,10 @@ bot.on("message", async autoresponder => {
 
 bot.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', 'welcome-leave');
-    let memberavatar = member.user.avatarURL()
+    let memberavatar = member.user.displayAvatarURL;
         if (!channel) return;
         let embed = new Discord.RichEmbed()
-        .setColor('RANDOM')
+        .setColor("#27AE60")
         .setThumbnail(memberavatar)
         .addField(':bust_in_silhouette: | name : ', `${member}`)
         .addField(':microphone2: | Welcome!', `Welcome to the server, ${member}`)
@@ -69,10 +69,10 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('guildMemberRemove', member => {
     let channel = member.guild.channels.find('name', 'welcome-leave');
-    let memberavatar = member.user.avatarURL()
+    let memberavatar = member.user.displayAvatarURL;
         if (!channel) return;
         let embed = new Discord.RichEmbed()
-        .setColor('RANDOM')
+        .setColor("#27AE60")
         .setThumbnail(memberavatar)
         .addField(':bust_in_silhouette: | Name:', `${member}`)
         .addField('Has Let the Server', 'Good Bye !')
