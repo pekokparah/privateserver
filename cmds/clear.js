@@ -5,11 +5,13 @@ exports.run = async (bot, message, args) => {
       let insert = args.join(" ");
       if (!message.member.permissions.has("MANAGE_MESSAGES")) {
           message.channel.send('You do not have ``Manage Messages`` permissions');
+          message.delete();
           return;
       }
 
       if (!insert) {
           message.channel.send('🚫 usage : `-clear <1 - 100>`');
+          message.delete();
           return;
       }
     
