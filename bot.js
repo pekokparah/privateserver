@@ -6,7 +6,7 @@ var prefix = '-';
 bot.on("ready", async () => {
     console.log(`Logged in as : ${bot.user.tag}`);
     console.log(`${bot.user.username} is ready!`)
-    bot.user.setActivity(`Use Command | ${prefix}help`);
+    bot.user.setActivity(`mention me for help !`);
   });
   
 bot.on("message", async message => {
