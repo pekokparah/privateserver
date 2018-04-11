@@ -9,7 +9,7 @@ exports.run = async (bot, message, args) => {
       }
 
       if (!insert) {
-          message.channel.send('```Use the command correctly. \n Example: ' + '-' + 'Clear <2 - 100>```');
+          message.channel.send('🚫 usage : `-clear <1 - 100>`');
           return;
       }
     
