@@ -76,10 +76,10 @@ bot.on('guildMemberRemove', member => {
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
         .addField('Name:', `${member}`)
-        .addField('Has Let the Server', ';(')
+        .addField('Has Let the Server', 'Good Bye !')
         .addField('Bye Bye :(', 'We will all miss you!')
         .addField('The server now as', `${member.guild.memberCount}` + " members")
-        .setFooter(`**${member.guild.name}`)
+        .setFooter(`**${member.guild.name}**`)
         .setTimestamp()
 
         channel.sendEmbed(embed);
