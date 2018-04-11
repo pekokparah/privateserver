@@ -5,7 +5,7 @@ exports.run = async (bot, message, args) => {
 let {body} = await superagent
 .get("random.dog/woof.json")
 var catembed = new Discord.RichEmbed()
-.setTitle('Here is your random Anime Neko!')
+.setTitle('Here is your random Dog!')
 .setColor("GREEN")
 .setImage(body.url)
 message.channel.send(catembed)
