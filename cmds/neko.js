@@ -7,7 +7,7 @@ let {body} = await superagent
 var catembed = new Discord.RichEmbed()
 .setTitle('Here is your random cat!')
 .setColor("GREEN")
-.setImage(body.file)
+.setImage(body.neko)
 message.channel.send(catembed)
 }
 
