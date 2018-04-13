@@ -6,8 +6,8 @@ let embed = new Discord.RichEmbed()
 .setTitle(':bow:  Welcome Command !')
 .addField('how to use welcome commands?','create a channel called `welcome-leave`', true)
 .addField('How does it work?','`will automatically welcome new members or members who have been out of the server`', true)
-.setColor('#00FF00')
-.setFooter('©Beta | By: Patrick Poppy | 2018')
+        .setColor("#9A2EFE")
+.setFooter('©Beta | By: Qyto | 2018')
 message.channel.send({embed})
 }
 
