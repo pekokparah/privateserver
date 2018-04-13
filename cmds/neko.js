@@ -6,7 +6,7 @@ let {body} = await superagent
 .get("nekos.life/api/neko")
 var catembed = new Discord.RichEmbed()
 .setTitle('Here is your random Anime Neko!')
-.setColor("GREEN")
+        .setColor("#9A2EFE")
 .setImage(body.neko)
 message.channel.send(catembed)
 }
