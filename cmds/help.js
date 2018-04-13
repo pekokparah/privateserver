@@ -3,8 +3,8 @@ const Discord = require("discord.js");
 exports.run = async (bot, message, args) => {
   let bicon = bot.user.displayAvatarURL;
   let patrick = new Discord.RichEmbed()
-.setTitle(':palm_tree: Hello, i am patrick :palm_tree:')
-.setDescription('I`m the bot of the bikini bottom')
+.setTitle(':sparkles:  Hello, i am Cosmic :sparkles: ')
+.setDescription('I was made by Qytho')
 .addField('Anime:','`neko`', true)
 .addField('Core:','`help` `ping` `invite`', true)
 .addField('Moderation:','`clear` `welcome`', true)
