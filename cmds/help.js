@@ -11,7 +11,7 @@ exports.run = async (bot, message, args) => {
 .addField('Utility:','`avatar` `weather`', true)
 .addField('Fun:','`say`', true)
 .addField('Image:','`cat` `dog`', true)
-.setColor('#00FF00')
+        .setColor("#9A2EFE")
 .setThumbnail(bicon)
 .setFooter('©Beta | By: Patrick Poppy | 2018')
 message.channel.send(patrick);
