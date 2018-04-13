@@ -4,7 +4,6 @@ const weather = require("weather-js");
 const bot = new Discord.Client({disableEveryone: true});
 
 var prefix = 'c.';
-var prefix = 'C.';
 
 
 bot.on("ready", async () => {
