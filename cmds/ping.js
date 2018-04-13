@@ -6,7 +6,7 @@ let embed = new Discord.RichEmbed()
 .setTitle(':dragon: Patrick Heard!')
 .addField('Signal :signal_strength:',`${ping}ms`, true)
 .setColor('#00FF00')
- .setFooter('©Beta | By: Patrick Poppy | 2018')
+ .setFooter('©Beta | By: Qyto | 2018')
 message.channel.send({embed})
 }
 
