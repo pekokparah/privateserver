@@ -13,7 +13,7 @@ exports.run = async (bot, message, args) => {
 .addField('Image:','`cat` `dog`', true)
         .setColor("#9A2EFE")
 .setThumbnail(bicon)
-.setFooter('©Beta | By: Qyto | 2018')
+.setFooter('©Beta | By: Alfian Verter | 2018')
 message.channel.send(patrick);
 }
 
