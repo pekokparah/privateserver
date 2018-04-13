@@ -3,7 +3,7 @@ const superagent = require("superagent");
 const weather = require("weather-js");
 const bot = new Discord.Client({disableEveryone: true});
 
-var prefix = 'C.';
+var prefix = 'c.';
 
 bot.on("ready", async () => {
     console.log(`Logged in as : ${bot.user.tag}`);
