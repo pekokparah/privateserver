@@ -4,7 +4,7 @@ exports.run = async (bot, message, args) => {
   let sicon = message.guild.iconURL;
   let patrick = new Discord.RichEmbed()
   .setAuthor(message.guild.name, message.guild.iconURL)
-  .setColor('#00FF00')
+        .setColor("#9A2EFE")
   .setThumbnail(message.guild.iconURL)
   .setDescription(`Owner: ${message.guild.owner}`)
   .addField("Member Count:", message.guild.memberCount, true)
