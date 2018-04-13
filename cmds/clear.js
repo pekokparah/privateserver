@@ -10,7 +10,7 @@ exports.run = async (bot, message, args) => {
       }
 
       if (!insert) {
-          message.channel.send('🚫 usage : `*clear <1 - 100>`');
+          message.channel.send('🚫 usage : `C.clear <1 - 100>`');
           message.delete();
           return;
       }
@@ -28,7 +28,7 @@ exports.run = async (bot, message, args) => {
          .setTitle('Clean! :put_litter_in_its_place:  ')
          .setDescription(`${insert} messages deleted.`)
          .setColor('#00FF00')
-         .setFooter('©Beta | By: Patrick Poppy | 2018')
+         .setFooter('©Beta | By: Qyto | 2018')
      message.channel.send(embed)
      message.delete();
   }
