@@ -13,7 +13,7 @@ exports.run = async (bot, message, args) => {
   .addField("Emojis:", message.guild.emojis.size, true)
   .addField("Region:", message.guild.region, true)
   .addField('Created:', message.guild.createdAt.toLocaleString(), true)
-  .setFooter('@Beta | By: Patrick Poppy | 2018')
+  .setFooter('@Beta | By: Qyto | 2018')
 
   message.channel.send(patrick);
 }
