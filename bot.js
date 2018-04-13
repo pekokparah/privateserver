@@ -3,7 +3,7 @@ const superagent = require("superagent");
 const weather = require("weather-js");
 const bot = new Discord.Client({disableEveryone: true});
 
-var prefix = '*';
+var prefix = 'C.';
 
 bot.on("ready", async () => {
     console.log(`Logged in as : ${bot.user.tag}`);
@@ -40,7 +40,7 @@ bot.on("message", async autoresponder => {
         if (autoresponder.content.startsWith(prefix)) return;
     
     if (autoresponder.content === `<@${bot.user.id}>`) {
-    return autoresponder.channel.send(`Hi ${sender},` + ' use this command ``*help`` ')
+    return autoresponder.channel.send(`Hi ${sender},` + ' use this command ``C.help`` ')
            message.react('👍');
     }
         
