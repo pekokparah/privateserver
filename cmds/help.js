@@ -4,7 +4,7 @@ exports.run = async (bot, message, args) => {
   let bicon = bot.user.displayAvatarURL;
   let patrick = new Discord.RichEmbed()
 .setTitle(':sparkles:  Hello, i am Cosmic :sparkles: ')
-.setDescription('this is a feature I give to you')
+.setDescription('this is a feature I give to you | use this prefix `c.`')
 .addField('Anime:','`neko`', true)
 .addField('Core:','`help` `ping` `invite`', true)
 .addField('Moderation:','`clear` `welcome`', true)
