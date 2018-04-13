@@ -2,6 +2,9 @@ const Discord = require("discord.js");
 const superagent = require("superagent");
 const weather = require("weather-js");
 const bot = new Discord.Client({disableEveryone: true});
+
+client.user.setActivity("MENTION ME !", {type: "WATCHING"});
+
 var prefix = '*';
 
 bot.on("ready", async () => {
