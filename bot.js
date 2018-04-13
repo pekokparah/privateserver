@@ -9,7 +9,6 @@ var prefix = 'c.';
 bot.on("ready", async () => {
     console.log(`Logged in as : ${bot.user.tag}`);
     console.log(`${bot.user.username} is ready!`)
-    bot.user.setActivity(`mention me for help !`);
   });
   
 bot.on("message", async message => {
@@ -44,6 +43,12 @@ bot.on("message", async autoresponder => {
     autoresponder.react('👍');
     return autoresponder.channel.send(`Hi ${sender},` + ' use this command ``c.help`` ')
     }
+    
+        function randomStatus() {
+        let status = [`on ${bot.guilds.size} guilds.`, `with ${bot.users.size.toLocaleString()} users.`, 'mention @Cosmic', 'type c.help']
+          let rstatus = Math.floor(Math.random() * status.length);
+        bot.user.setActivity(status[rstatus], {type: 'PLAYING'});
+    }; setInterval(randomStatus, 40000)
         
 });
 
