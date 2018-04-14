@@ -4,7 +4,6 @@ const weather = require("weather-js");
 const economy = require('discord-eco');
 const bot = new Discord.Client({disableEveryone: true});
 
-let args = message.content.slice(prefix.length).trim().split(" ");
 
 var prefix = 'c.';
 
@@ -12,6 +11,8 @@ var prefix = 'c.';
 bot.on("ready", async () => {
     console.log(`Logged in as : ${bot.user.tag}`);
     console.log(`${bot.user.username} is ready!`)
+    
+    let args = message.content.slice(prefix.length).trim().split(" ");
             
     function randomStatus() {
         let status = [`on ${bot.guilds.size} guilds.`, `with ${bot.users.size.toLocaleString()} users.`, 'mention @Cosmic', 'type c.help']
