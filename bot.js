@@ -4,6 +4,8 @@ const weather = require("weather-js");
 const economy = require('discord-eco');
 const bot = new Discord.Client({disableEveryone: true});
 
+let args = message.content.slice(prefix.length).trim().split(" ");
+
 var prefix = 'c.';
 
 
