@@ -16,11 +16,9 @@ exports.run = async (bot, message, args) => {
     .addField("Tiime", message.createdAt)
     .addField("Reason", kReason);
 
-    let kickChannel = message.guild.channels.find(`name`, "incidents");
-    if(!kickChannel) return message.channel.send("Can't find incidents channel.");
-
+    
     message.guild.member(kUser).kick(kReason);
-    kickChannel.send(kickEmbed);
+    kUser.send(kickEmbed);
 }
 
 module.exports.help = {
