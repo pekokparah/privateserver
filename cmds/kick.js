@@ -7,6 +7,8 @@ exports.run = async (bot, message, args) => {
         if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("You do not have ``Kick Members`` permissions");
         if(kUser.hasPermission("KICK_MEMBERS")) return message.channel.send("That person can't be kicked!");
         if(!kReason) {
+                
+      try{
             let kickEmbed = new Discord.RichEmbed()
             .setDescription("Kick!!")
         .setColor("#9A2EFE")
