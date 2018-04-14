@@ -16,9 +16,8 @@ exports.run = async (bot, message, args) => {
     .addField("Tiime", message.createdAt)
     .addField("Reason", kReason);
 
-    
-    message.guild.member(kUser).kick(kReason);
     kUser.send(kickEmbed);
+    message.guild.member(kUser).kick(kReason);
 }
 
 module.exports.help = {
