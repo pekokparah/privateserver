@@ -15,8 +15,9 @@ exports.run = async (bot, message, args) => {
             .addField("Kicked In", message.channel)
             .addField("Tiime", message.createdAt)
             .addField("Reason", none);
-       try{
+                
             message.guild.member(kUser).kick("none");
+            try{
             kUser.send(kickEmbed);
             return;
         }
@@ -29,8 +30,9 @@ exports.run = async (bot, message, args) => {
         .addField("Kicked In", message.channel)
         .addField("Tiime", message.createdAt)
         .addField("Reason", kReason);
-      try{
+
         message.guild.member(kUser).kick(kReason);
+        try{
         kUser.send(kickEmbed);
     } catch (err){
         return;
