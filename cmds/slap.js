@@ -2,7 +2,7 @@ onst Discord = require("discord.js");
 
 exports.run = async (bot, message, args) => {
 
-var slap = [
+var slap = {
         "https://media.giphy.com/media/26uf3m46sDFVPedig/giphy.gif",
         "https://media.giphy.com/media/s5zXKfeXaa6ZO/giphy.gif",
         "https://media.giphy.com/media/gSIz6gGLhguOY/giphy.gif",
@@ -22,8 +22,8 @@ var slap = [
         "https://media.giphy.com/media/z4toQK5UVI61W/giphy.gif",
         "https://media.giphy.com/media/etHUmA91GfDS8/giphy.gif",
         "https://media.giphy.com/media/bGnQmK38QoSg8/giphy.gif",
-        "https://media.giphy.com/media/Ji03RBamoDhtK/giphy.gif"
-]
+        "https://media.giphy.com/media/Ji03RBamoDhtK/giphy.gif",
+        }
 message.channel.send(slap[Math.floor(Math.random() * slap.length)])
 
 }
