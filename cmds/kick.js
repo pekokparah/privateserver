@@ -22,7 +22,7 @@ exports.run = async (bot, message, args) => {
             kUser.send(kickEmbed);
             return;
         }
-   try{
+  catch(e)
         let kickEmbed = new Discord.RichEmbed()
         .setDescription("Kick!!")
         .setColor("#9A2EFE")
