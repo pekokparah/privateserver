@@ -5,7 +5,7 @@ exports.run = async (bot, message, args) => {
 let {body} = await superagent
 .get("nekos.life/api/pat")
 var catembed = new Discord.RichEmbed()
-.setTitle('Here is your random Pat')
+.setTitle('I will always wipe you :*')
         .setColor("#9A2EFE")
 .setImage(body.url)
 message.channel.send(catembed)
