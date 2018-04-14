@@ -12,6 +12,7 @@ exports.run = async (bot, message, args) => {
 .addField('Utility:','`avatar` `weather`', true)
 .addField('Fun:','`say` `vote`', true)
 .addField('Image:','`cat` `dog` `slap`', true)
+.addField('Support Bot:','`votebot` `channel` `invite`', true)
         .setColor("#9A2EFE")
 .setThumbnail(bicon)
 .setFooter('©Beta | By: Alfian Verter | 2018')
