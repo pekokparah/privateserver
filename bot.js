@@ -22,6 +22,11 @@ bot.on("message", async message => {
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
     
+        let msg = message.content.toLowerCase();
+        let sender = message.author;
+        let args = message.content.slice(prefix.length).trim().split(" ");
+        let cmd = args.shift().toLowerCase();
+        if (!message.content.startsWith(prefix)) return;
   
     try {
       let commandFile = require(`./cmds/${cmd}.js`);
