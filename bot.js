@@ -46,7 +46,7 @@ bot.on("message", async autoresponder => {
         let sender = autoresponder.author;
         if (autoresponder.content.startsWith(prefix)) return;
     
-    if (autoresponder.content === `<@!${bot.user.id}>`) {
+    if (autoresponder.content === `<@${bot.user.id}>`) {
     autoresponder.react('👍');
     return autoresponder.channel.send(`Hi ${sender},` + ' use this command ``c.help`` ')
     }
