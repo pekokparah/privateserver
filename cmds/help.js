@@ -8,7 +8,7 @@ exports.run = async (bot, message, args) => {
 .addField('Anime:','`neko` `pat`', true)
 .addField('Core:','`help` `ping` `stats`', true)
 .addField('Economy:','`balance` `addbalance`', true)
-.addField('Moderation:','`clear` `welcome` `kick` `ban`', true)
+.addField('Moderation:','`clear` `welcome` `kick` `ban` `report`', true)
 .addField('Utility:','`avatar` `weather`', true)
 .addField('Fun:','`say` `vote`', true)
 .addField('Image:','`cat` `dog` `slap`', true)
