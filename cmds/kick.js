@@ -17,11 +17,10 @@ exports.run = async (bot, message, args) => {
             .addField("Reason", none);
                 
             message.guild.member(kUser).kick("none");
-            try{
             kUser.send(kickEmbed);
             return;
         }
-   
+   try{
         let kickEmbed = new Discord.RichEmbed()
         .setDescription("Kick!!")
         .setColor("#9A2EFE")
@@ -32,7 +31,6 @@ exports.run = async (bot, message, args) => {
         .addField("Reason", kReason);
 
         message.guild.member(kUser).kick(kReason);
-        try{
         kUser.send(kickEmbed);
     } catch (err){
         return;
