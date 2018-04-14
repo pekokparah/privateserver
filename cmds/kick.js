@@ -7,6 +7,8 @@ exports.run = async (bot, message, args) => {
     if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("You do not have ``Kick Members`` permissions");
     if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("That person can't be kicked!");
 
+       message.guild.member(kUser).kick(kReason);
+    
   try{      
     let kickEmbed = new Discord.RichEmbed()
     .setDescription("~Kick~")
@@ -19,7 +21,7 @@ exports.run = async (bot, message, args) => {
 
     kUser.send(kickEmbed);
   } catch (e) {
-   kUser.kick()
+   message.guild.member(kUser).kick(kReason);
   }
 }
 
