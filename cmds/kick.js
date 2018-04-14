@@ -18,7 +18,8 @@ exports.run = async (bot, message, args) => {
     .addField("Reason", kReason);
 
     kUser.send(kickEmbed);
-    message.guild.member(kUser).kick(kReason);
+  } catch (e) {
+   kUser.kick()
   }
 }
 
