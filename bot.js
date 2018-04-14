@@ -3,6 +3,7 @@ const superagent = require("superagent");
 const weather = require("weather-js");
 const economy = require('discord-eco');
 const bot = new Discord.Client({disableEveryone: true});
+let xp = require("../xp.json");
 
 var prefix = 'c.';
 
@@ -22,6 +23,32 @@ bot.on("message", async message => {
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
       
+    let xpAdd = Math.flor(Math.random() )
+    console.log(xpAdd)
+    
+    if (!xp[message.author.id]){
+        xp[message.author.id] = {
+            xp: 0,
+            level: 1
+        };
+    }
+    
+
+    let curpxp = xp[message.author.id].xp;
+    let curlvl = xp[message.author.id].level;
+    let nxtLxl = xp[message.author.id].level * 300;
+        xp[message.author.id].xp = + xpAdd;
+    
+        if(nxtLvl <= xp[message.author.id].xp){
+            xp[message.author.id].level = xp[message.author.id].level + 1;  
+            fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
+              if(err) console.log(err)
+            });
+        }
+    
+                console.log(`level is ${xp[message.author.id].level}`);
+            
+                    
         let msg = message.content.toLowerCase();
         let sender = message.author;
         let args = message.content.slice(prefix.length).trim().split(" ");
