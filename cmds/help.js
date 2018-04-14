@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 exports.run = async (bot, message, args) => {
   let bicon = bot.user.displayAvatarURL;
   let patrick = new Discord.RichEmbed()
-.setTitle(':sparkles:  Hello, i am Cosmic :sparkles: ')
+.setAuthor(':sparkles:  Hello, i am Cosmic :sparkles:', bot.user.avatarURL)
 .setDescription('this is a feature I give to you | use this prefix `c.`')
 .addField('Anime:','`neko` `pat`', true)
 .addField('Core:','`help` `ping` `invite` `support` `votebot`', true)
