@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const superagent = require("superagent");
 const weather = require("weather-js");
+const economy = require('discord-eco');
 const bot = new Discord.Client({disableEveryone: true});
 
 var prefix = 'c.';
