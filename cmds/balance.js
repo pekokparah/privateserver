@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const economy = require('discord-eco');
 
 exports.run = async (bot, message, args) => {
 
