@@ -26,6 +26,10 @@ bot.on("message", async message => {
         let args = message.content.slice(prefix.length).trim().split(" ");
         let cmd = args.shift().toLowerCase();
         if (!message.content.startsWith(prefix)) return;
+    
+    let fetched = await db.fetch(`prefix_$(message.guild.id`);
+    if (fetched === null) prefix = 'c.';
+    else prefix = fetched;
   
     try {
       let commandFile = require(`./cmds/${cmd}.js`);
