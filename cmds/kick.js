@@ -20,9 +20,9 @@ exports.run = async (bot, message, args) => {
     .addField("Reason", kReason);
 
     kUser.send(kickEmbed);
-    message.channel.send(`${kUser} baru saja dikik dari server ini!\n**Alasan:** ${kReason}`);
+    message.channel.send(`${kUser} just got kick from this server!\n**Reason:** ${kReason}`);
   } catch (e) {
-    message.channel.send(`${kUser} baru saja dikik dari server ini!\n**Alasan:** ${kReason}`);
+    message.channel.send(`${kUser} just got kick from this server!\n**Reason:** ${kReason}`);
   }
 }
 
