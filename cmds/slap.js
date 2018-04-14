@@ -25,10 +25,9 @@ var slap = [
         "https://media.giphy.com/media/Ji03RBamoDhtK/giphy.gif",
 ]
 var embed = new Discord.RichEmbed()
-        .setDescription(`TEXT`)
+        .setDescription(`Random Image Slap !`)
         .setImage(slap[Math.floor(Math.random() * slap.length)])
         message.channel.send(embed)
-        break;
 
 }
 
