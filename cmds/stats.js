@@ -15,7 +15,7 @@ exports.run = async (bot, message, args) => {
               .addField('📟 Cpu usage :', `${Math.round(cpu * 100) / 100}%`)
               .addField(`💾 Ram usage :`, `${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)} MB`)
               .addField(`🔰 Creator : `, `${CREATOR}`)
-              .setColor(`GOLD`)
+        .setColor("#9A2EFE")
               .setFooter('©Beta | By: Alfian Verter | 2018')
           message.channel.send(embed)
 }
