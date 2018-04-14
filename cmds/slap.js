@@ -22,7 +22,7 @@ var slap = [
         "https://media.giphy.com/media/z4toQK5UVI61W/giphy.gif",
         "https://media.giphy.com/media/etHUmA91GfDS8/giphy.gif",
         "https://media.giphy.com/media/bGnQmK38QoSg8/giphy.gif",
-        "https://media.giphy.com/media/Ji03RBamoDhtK/giphy.gif",
+        "https://media.giphy.com/media/Ji03RBamoDhtK/giphy.gif"
 ]
 message.channel.send(slap[Math.floor(Math.random() * slap.length)])
 
