@@ -10,13 +10,13 @@ exports.run = async (bot, message, args) => {
       }
 
       if (!insert) {
-          message.channel.send('🚫 usage : `c.clear <1 - 100>`');
+          message.channel.send('🚫 usage : `c.clear <1 - 400>`');
           message.delete();
           return;
       }
     
-      if (insert > 100) {
-         message.channel.send("I just can delete 100 message")
+      if (insert > 400) {
+         message.channel.send("I just can delete 400 message")
       }
     
       const fetched = await message.channel.fetchMessages({limit: insert});
