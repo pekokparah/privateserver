@@ -100,29 +100,5 @@ bot.on('guildMemberRemove', member => {
     console.log("Leave Message Sent")
 });
 
-bot.on('message', message => {
-
-    let prefix = '~';
-    let msg = message.content.toUpperCase();
-
-
-    if (msg === `${prefix}BALANCE` || msg === `${prefix}MONEY`) { 
-
-        economy.fetchBalance(message.author.id + message.guild.id).then((i) => { 
-            const embed = new Discord.RichEmbed()
-                .setDescription(`**${message.guild.name} Bank**`)
-                .setColor(0xD4AF37)
-                .addField('Account Holder',message.author.username,true) 
-                .addField('Account Balance',i.money,true)
-
-
-            message.channel.send({embed})
-
-        })
-
-    }
-
-});
-
 
 bot.login(process.env.BOT_TOKEN);
