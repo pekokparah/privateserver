@@ -4,13 +4,13 @@ const economy = require('discord-eco');
 exports.run = async (bot, message, args) => {
 
         if (!args[0]) {
-            message.channel.send(`**You need to define an amount. Usage: ${prefix}addbalance <amount> <user>**`);
+            message.channel.send(`**You need to define an amount. Usage: c.addbalance <amount> <user>**`);
             return;
         }
 
         // We should also make sure that args[0] is a number
         if (isNaN(args[0])) {
-            message.channel.send(`**The amount has to be a number. Usage: ${prefix}addbalance <amount> <user>**`);
+            message.channel.send(`**The amount has to be a number. Usage: c.addbalance <amount> <user>**`);
             return; // Remember to return if you are sending an error message! So the rest of the code doesn't run.
         }
 
