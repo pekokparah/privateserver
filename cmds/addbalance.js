@@ -3,6 +3,11 @@ const economy = require('discord-eco');
 
 exports.run = async (bot, message, args) => {
 
+          if (!message.member.permissions.has("ADMINISTRATOR")) {
+          message.channel.send('You do not have ``ADMINISTRATOR`` permissions');
+          message.delete();
+          return;
+        }
         if (!args[0]) {
             message.channel.send(`**You need to define an amount. Usage: c.addbalance <amount> <user>**`);
             return;
@@ -25,7 +30,7 @@ exports.run = async (bot, message, args) => {
 
         // Finally, run this.. REMEMBER IF you are doing the guild-unique method, make sure you add the guild ID to the end,
         economy.updateBalance(defineduser + message.guild.id, parseInt(args[0])).then((i) => { // AND MAKE SURE YOU ALWAYS PARSE THE NUMBER YOU ARE ADDING AS AN INTEGER
-            message.channel.send(`**User defined had ${args[0]} added/subtraction from their account.**`)
+            message.reply(`**User defined had ${args[0]} added from their account.**`)
         });
 
     }
