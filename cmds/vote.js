@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 
 exports.run = async (bot, message, args) => {
-	if (msg === prefix +'VOTE') {
 		message.react('👍');
 		message.react('👎');
 		message.react('👐');
