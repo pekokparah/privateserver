@@ -21,7 +21,7 @@ exports.run = async (bot, message, args) => {
 
     kUser.send(kickEmbed);
   } catch (e) {
-      
+    message.channel.send(`${kUser} baru saja dikik dari server ini!\n**Alasan:** ${kReason}`);
   }
 }
 
