@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const moment = require("moment");
 const VERSION = "V1.1"
 const CREATOR = "Alfian Verter"
 
