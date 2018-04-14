@@ -11,15 +11,16 @@ exports.run = async (bot, message, args) => {
     
   try{      
     let kickEmbed = new Discord.RichEmbed()
-    .setDescription("~Kick~")
-    .setColor("#e56b00")
-    .addField("Kicked User", `${kUser} with ID ${kUser.id}`)
-    .addField("Kicked By", `<@${message.author.id}> with ID ${message.author.id}`)
+    .setDescription("KICK !!")
+     .setColor("#9A2EFE")
+    .addField("Kicked User", `${kUser}}`)
+    .addField("Kicked By", `<@${message.author.id}>`)
     .addField("Kicked In", message.channel)
     .addField("Tiime", message.createdAt)
     .addField("Reason", kReason);
 
     kUser.send(kickEmbed);
+    message.channel.send(`${kUser} baru saja dikik dari server ini!\n**Alasan:** ${kReason}`);
   } catch (e) {
     message.channel.send(`${kUser} baru saja dikik dari server ini!\n**Alasan:** ${kReason}`);
   }
