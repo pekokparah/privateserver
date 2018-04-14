@@ -13,5 +13,5 @@ message.channel.send({embed})
 }
     
 exports.help = {
-name: "invite"
+name: "support"
 }
