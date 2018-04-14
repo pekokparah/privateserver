@@ -8,10 +8,10 @@ exports.run = async (bot, message, args) => {
         if(kUser.hasPermission("KICK_MEMBERS")) return message.channel.send("That person can't be kicked!");
         if(!kReason) {
             let kickEmbed = new Discord.RichEmbed()
-            .setDescription("~Kick~")
-            .setColor("#e56b00")
-            .addField("Kicked User", `${kUser} with ID ${kUser.id}`)
-            .addField("Kicked By", `<@${message.author.id}> with ID ${message.author.id}`)
+            .setDescription("Kick!!")
+        .setColor("#9A2EFE")
+            .addField("Kicked User", `${kUser}`)
+            .addField("Kicked By", `<@${message.author.id}>`)
             .addField("Kicked In", message.channel)
             .addField("Tiime", message.createdAt)
             .addField("Reason", none);
@@ -24,9 +24,9 @@ exports.run = async (bot, message, args) => {
     try{
         let kickEmbed = new Discord.RichEmbed()
         .setDescription("~Kick~")
-        .setColor("#e56b00")
-        .addField("Kicked User", `${kUser} with ID ${kUser.id}`)
-        .addField("Kicked By", `<@${message.author.id}> with ID ${message.author.id}`)
+        .setColor("#9A2EFE")
+        .addField("Kicked User", `${kUser}`)
+        .addField("Kicked By", `<@${message.author.id}>`)
         .addField("Kicked In", message.channel)
         .addField("Tiime", message.createdAt)
         .addField("Reason", kReason);
