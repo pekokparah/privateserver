@@ -13,7 +13,7 @@ exports.run = async (bot, message, args) => {
 
             message.channel.send({embed})
   
-}
+})
 
 exports.help = {
   name: "say"
