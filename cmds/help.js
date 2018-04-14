@@ -6,7 +6,7 @@ exports.run = async (bot, message, args) => {
 .setAuthor('✨  Hello, i am Cosmic  ✨', bot.user.avatarURL)
 .setDescription('this is a feature I give to you | use this prefix `c.`')
 .addField('Anime:','`neko` `pat`', true)
-.addField('Core:','`help` `ping`', true)
+.addField('Core:','`help` `ping` `stats`', true)
 .addField('Economy:','`balance` `addbalance`', true)
 .addField('Moderation:','`clear` `welcome` `kick` `ban`', true)
 .addField('Utility:','`avatar` `weather`', true)
