@@ -19,7 +19,7 @@ bot.on("ready", async () => {
     function randomStatus() {
         let status = [`on ${bot.guilds.size} servers.`, `with ${bot.users.size.toLocaleString()} users.`, 'mention @Cosmic', 'type )help']
           let rstatus = Math.floor(Math.random() * status.length);
-        bot.user.setActivity(status[rstatus], {type: 'STREAMING'});
+        bot.user.setActivity(status[rstatus], {type: 'WATCHING'});
     }; setInterval(randomStatus, 20000)
   });
   
